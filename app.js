@@ -11,6 +11,11 @@ function save() {
 
 function render() {
   habitList.innerHTML = '';
+  const done = habits.filter(h => h.done).length;
+  const counter = document.getElementById('counter');
+  counter.textContent = habits.length
+    ? `Выполнено: ${done} из ${habits.length}`
+    : '';
 
   if (habits.length === 0) {
     habitList.innerHTML = '<p class="empty-msg">Пока нет привычек. Добавьте первую!</p>';
