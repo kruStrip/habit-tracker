@@ -125,7 +125,13 @@ h1 {
   background: #fff5f5;
 }
 
-.empty-msg {
+.counter {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #718096;
+  margin-bottom: 12px;
+}
+
   text-align: center;
   color: #a0aec0;
   font-size: 0.9rem;
