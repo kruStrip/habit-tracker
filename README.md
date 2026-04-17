@@ -15,10 +15,32 @@
 - HTML5, CSS3, Vanilla JS
 - Docker + nginx
 - Docker Compose
+- Prettier (форматтер)
+- ESLint (линтер)
+- Husky + lint-staged (pre-commit хуки)
 
 ## Запуск без Docker
 
 Откройте файл `index.html` в браузере — установка не требуется.
+
+## Линтер и форматтер
+
+Установить зависимости:
+```bash
+npm install
+```
+
+Форматирование кода:
+```bash
+npm run format
+```
+
+Проверка линтером:
+```bash
+npm run lint
+```
+
+Pre-commit хуки запускаются автоматически при каждом `git commit`.
 
 ## Запуск через Docker
 
@@ -47,3 +69,22 @@ docker-compose down
 ```
 
 Откройте в браузере: http://localhost:8080
+
+## Качество кода
+
+Установить зависимости:
+```bash
+npm install
+```
+
+Форматирование (prettier):
+```bash
+npm run format
+```
+
+Проверка линтером (eslint):
+```bash
+npm run lint
+```
+
+Pre-commit хук запускается автоматически перед каждым коммитом и проверяет форматирование и линтер.
